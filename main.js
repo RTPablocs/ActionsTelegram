@@ -2,7 +2,6 @@ const TelegramBot = require('node-telegram-bot-api');
 const core = require('@actions/core');
 const github = require('@actions/github');
 const token = core.getInput('token');
-console.log(token);
 const bot = new TelegramBot(token, { polling: true });
 
 

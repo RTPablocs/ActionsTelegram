@@ -5,7 +5,7 @@ const token = core.getInput('token');
 const bot = new TelegramBot(token, { polling: true });
 
 try {
-    bot.sendMessage(187940793, "Action Completa!");
+    bot.sendMessage(187940793, "Action Completada!");
 } catch (error) {
     core.setFailed(error.message);
 }

@@ -2,11 +2,11 @@ const TelegramBot = require('node-telegram-bot-api');
 const core = require('@actions/core');
 const github = require('@actions/github');
 const token = core.getInput('token');
-const bot = new TelegramBot(token, { polling: true });
+const bot = new TelegramBot(token, { polling: false });
 
 
 bot.sendMessage(187940793, "Action Completada!");
 console.log('Done!');
-setTimeout(() => {
-    process.exit(0)
-}, 1000)
+process.exit(0)
+
+

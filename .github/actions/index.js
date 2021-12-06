@@ -61674,14 +61674,15 @@ const TelegramBot = __nccwpck_require__(3580);
 const core = __nccwpck_require__(5127);
 const github = __nccwpck_require__(3134);
 const token = core.getInput('token');
-const bot = new TelegramBot(token, { polling: true });
+const bot = new TelegramBot(token, { polling: false });
 
 
 bot.sendMessage(187940793, "Action Completada!");
 console.log('Done!');
-setTimeout(() => {
-    process.exit(0)
-}, 1000)
+process.exit(0)
+
+
+
 })();
 
 module.exports = __webpack_exports__;

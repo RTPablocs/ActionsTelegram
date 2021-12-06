@@ -7,11 +7,6 @@ inputs:
     required: true
     default: ""
 
-  name:
-    description: "Name for telegram message"
-    required: true
-    default: ""
-
 runs:
   using: "node12"
   main: "index.js"

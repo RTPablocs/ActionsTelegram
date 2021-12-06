@@ -13,4 +13,4 @@ jobs:
       - name: Notify
         uses: ./.github/actions
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.token }}

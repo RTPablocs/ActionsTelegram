@@ -1,0 +1,17 @@
+name: "TelegramBot"
+description: "Telegram Bot with actions"
+
+inputs:
+  token:
+    description: "Token for telegram HTTP api"
+    required: true
+    default: ""
+
+  name:
+    description: "Name for telegram message"
+    required: true
+    default: ""
+
+runs:
+  using: "node12"
+  main: "index.js"

@@ -61679,6 +61679,7 @@ const bot = new TelegramBot(token, { polling: true });
 
 bot.sendMessage(187940793, "Action Completada!");
 console.log('Done!');
+process.exit(0)
 
 
 
